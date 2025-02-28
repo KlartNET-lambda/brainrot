@@ -9,7 +9,7 @@ const videoSrc = querySelector_s("source", HTMLSourceElement);
 
 const controller = new VideoController(video);
 
-["mouseenter", "touchstart"].forEach(eventName => {
+['mouseenter', 'touchstart'].forEach(eventName => {
 	video.addEventListener(eventName, /** @param {MouseEvent | TouchEvent} e */ e => {
 		e.preventDefault();
 		
@@ -17,7 +17,7 @@ const controller = new VideoController(video);
 		controller.play();
 	});
 });
-["mouseleave", "touchend"].forEach(eventName => {
+['mouseleave', 'touchend'].forEach(eventName => {
 	video.addEventListener(eventName, /** @param {MouseEvent | TouchEvent} e */ e => {
 		e.preventDefault();
 
