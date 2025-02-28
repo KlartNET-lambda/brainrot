@@ -35,9 +35,9 @@ export class VideoController {
 				this.video.currentTime -= 0.03;
 			}
 		};
+		reverseFrame();
 
 		this.reverseInterval = setInterval(() => reverseFrame(), 30);
-		reverseFrame();
 	}
 
 	play() {
